@@ -1,16 +1,16 @@
 /* Estructura principal */
 
-.tarea-formulario{
+.tarea-formulario {
     display: flex;
-    flex-wrap:wrap ;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.tarea-input{
+.tarea-input {
     width: 350px;
     font-size: 18px;
-    background-color: white ;
+    background-color: white;
     padding: 14px 32px 14px 16px;
     border-radius: 4px 0 0 4px;
     border: 2px solid #49335c;
@@ -18,7 +18,7 @@
 }
 
 /* Boton agregar tarea */
-.tarea-boton{
+.tarea-boton {
     padding: 16px;
     font-size: 18px;
     font-family: Roboro, sans-serif;
@@ -26,8 +26,29 @@
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     outline: none;
-    background-color: #49335c ;
+    background-color: #49335c;
     color: white;
     text-transform: capitalize;
 
+}
+
+@media (max-width: 500px) {
+    .tarea-formulario {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tarea-input {
+        width: 150px;
+
+    }
+
+    .tarea-boton {
+        width: 100px;
+        height: 55px;
+        padding-bottom: 10px;
+        padding-top: 7px;
+        /* padding: 12px 22px 12px 13px;*/
+        text-align: center;
+    }
 }
